@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="level1">
+        <div class="container">
+            <div class="left">
+                <img class = "logo" src="logo.png"/>
+                <p class="title">С помощью нас<br> вы сможете создать то, о чем</p>
+                <p class="wish">желаете!</p>
+                <p class="parag">Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на все 100%. Вас не остановить!</p>
+                <button class="know">Узнать больше...</button>
+            </div>
+            <div class="right">
+                <img class="phone" src="header-img.png" width="80%" height="80%"/>
+            </div>
+        </div>
+    </div>
+    <div class="level2">
+        <div class="container2">
+            <div class="up">
+                <h3>Что вам необходимо?</h3>
+            </div>
+            <div class="down">
+                <div class="block">
+                    <img class = "image" src="f3.png"/>
+                    <h4 style="text-align: center;">Первый блок</h4>
+                    <p style="text-align: center;">lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+                <div class="block">
+                    <img class = "image" src="f4.png"/>
+                    <h4 style="text-align: center;">Второй блок</h4>
+                    <p style="text-align: center;">lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+                <div class="block">
+                    <img class = "image" src="f5.png"/>
+                    <h4 style="text-align: center;">Третий блок</h4>
+                    <p style="text-align: center;">lorem ipsum dolor sit amet consectetur adipiscing elit?</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="level3.5">
+        <div class="container35"> 
+            <div class="left">
+                <h3>Order information</h3>
+                <form class="form" action="https://action" method="post"></form>
+                    <div class="formBlock">
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="FirstName">First Name</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="FirstName" class="form_item" type="text">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="LastName">Last Name</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="LastName" class="form_item" type="text">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="PhoneNumber">PhoneNumber</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="PhoneNumber" class="form_item" type="text" placeholder="xxx-xxx-xxx">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="Destination">Destination</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="Destination" class="form_item" type="text"type="text">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="DateAndTime">DateAndTime</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="DateAndTime" class="form_item" type="text" placeholder="10.10.2010">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="Quantity">Quantity</label>
+                            </div>
+                            <div class="formRowInput">
+                                <input id="Quantity" class="form_item" type="text">  
+                            </div>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                                <label for="PaymentMethod">Payment method</label>
+                            </div>
+                            <select class="form-form_item" style="width: 208px; height: 36px; margin: 10px;" aria-label="Default select example">
+                                <option value="Card">Card</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Crypto">Crypto</option>
+                            </select>
+                        </div>
+                        <div class="formRow">
+                            <div class="formRowLabel">
+                               
+                            </div>
+                            <div class="formRowInput">
+                                <input class="form_item_button" style="margin: 20px;" type="submit" value="Send order" onclick="CheckValdation();">
+                            </div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+            <div class="right">
+                <h3 style="text-align: center;">Summary</h3>
+                <form class="form" action="https://action" method="post">
+                    <input class = "form_item" type="text" placeholder="Имя">
+                    <input class = "form_item" type="text" placeholder="E-mail">
+                    <input class = "form_item" type="text" placeholder="Еелефон">
+                    <input class = "form_item" type="text" placeholder="Какая тема вас интересует">
+                    <input class = "form_item_button" type="submit" value="Отправить вопрос!">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="level3">
+        <h3>Заказ обратного звонка</h3>
+        <form class="container3" action="https://action" method="post">
+            <input class = "form_item" type="text" placeholder="Имя" required>
+            <input class = "form_item" type="email" placeholder="E-mail" required>
+            <input class = "form_item" type="tel" placeholder="+7 (123) 456-78-91"  pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+            <input class = "form_item" type="text" placeholder="Какая тема вас интересует">
+            <input class = "form_item_button" type="submit" value="Отправить вопрос!">
+        </form>
+    </div>
+    
+    
+    <div class="level4">
+        Все на этом сайте защищено
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
